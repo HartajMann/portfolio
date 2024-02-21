@@ -13,7 +13,7 @@ const About = () => {
           </div>
           <h2 className='py-4 text-4xl text-[#8C8C73] font-semibold'>Who I Am</h2>
           <p className='py-2 text-2xl text-[#8C8C73] font-semibold font-[GeneralSans-Variable]'>
-            I'm Hartaj Mann, a passionate Software Development student at the Southern Alberta Institute of Technology (SAIT), actively enhancing my skills in a range of technologies. My focus is on coding and creating impactful tech solutions.
+            I&apos;m Hartaj Mann, a passionate Software Development student at the Southern Alberta Institute of Technology (SAIT), actively enhancing my skills in a range of technologies. My focus is on coding and creating impactful tech solutions.
           </p>
           <p className='py-2 text-2xl text-[#8C8C73] font-semibold font-[GeneralSans-Variable]'>
             My expertise spans various programming languages and frameworks, including React, Java, Python, and .NET, making me versatile in different tech environments. As a Full Stack Developer, I am adept in both front-end and back-end development, striving for efficient, user-centric web applications. My interest in UI/UX design drives me to create applications that are not only functional but also intuitive and visually engaging.
