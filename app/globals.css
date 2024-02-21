@@ -6,16 +6,33 @@ html{
   scroll-behavior:smooth;
  }
 @layer base{
+  @font-face {
+    font-family: "CabinetGrotesk-Variable";
+    src: url("./assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "GeneralSans-Variable";
+    src: url("./assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+
+
   body{
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#fafaf9]  tracking-wide
   }
 
   h1,h2,h3,h4,h5,h6{
     @apply font-bold
   }
 
-  h1{
-    @apply text-4xl sm:text-5xl md:text-6xl
+  h1 {
+    @apply text-5xl sm:text-5xl md:text-6xl font-dmsans
   }
 
   h2{
