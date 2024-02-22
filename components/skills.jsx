@@ -16,12 +16,12 @@ const skillData = [
 
 const Skills = () => {
   return (
-    <div id='Skills' className='w-full md:h-screen p-2 flex items-center py-16 bg-black '>
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
+    <div  className='w-full md:h-screen p-2 flex items-center py-16 bg-black '>
+      <div id='Skills' className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <div className='text-center mb-8'>
           <div className='flex items-center justify-center pb-7'>
             <Image src="/assets/Vector.svg" width={40} height={40} alt="Vector Image" />
-            <p className='uppercase text-7xl font-semibold font-[GeneralSans-Variable] p-3 text-[#8C8C73]'>Skills</p>
+            <p  className='uppercase text-7xl font-semibold font-[GeneralSans-Variable] p-3 text-[#8C8C73]'>Skills</p>
             <Image src="/assets/Vector.svg" width={40} height={40} alt="Vector Image" />
           </div>
         </div>
