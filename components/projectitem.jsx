@@ -1,20 +1,40 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-const projectitem = ({title,backgroundImage,projectUrl}) => {
+const ProjectItem = ({ title, backgroundImage, technologies, description, githubUrl, projectUrl }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
-    <Image src={backgroundImage}  alt='project' className='rounded-xl group-hover:opacity-10' />
-    <div className='hidden group-hover:block absolute top-[505] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
-        <p className='pb-4 pt-2 text-white text-center'>react js</p>
-        <Link href={projectUrl}>
-            <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>view project</p>
-        </Link>
+    <div className='group relative overflow-hidden rounded-xl mb-28'>
+      <div className='transition duration-300 ease-in-out transform group-hover:scale-110 duration-500'>
+        <Image src={backgroundImage} alt={title}  objectFit='cover' className='rounded-xl' />
+      </div>
+      <div className='absolute inset-0 bg-[#212127] bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-xl'>
+        <div className='flex h-full items-center justify-start p-4 '>
+          <div>
+            <h3 className='text-2xl text-white'>{title}</h3>
+            <h4 className='text-md text-gray-300'>{technologies}</h4>
+            <p className='text-sm text-gray-200'>{description}</p>
+            <div className='mt-4 flex space-x-4'>
+              {githubUrl && (
+                <Link href={githubUrl} passHref>
+                  <span className='text-white' target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github"></i> Github
+                  </span>
+                </Link>
+              )}
+              {projectUrl && (
+                <Link href={projectUrl} passHref>
+                  <span className='text-white'>
+                    <i className="fas fa-external-link-alt"></i> View Project
+                  </span>
+                </Link>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default projectitem
+export default ProjectItem;

@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Link href='/#About'>
                     <li className='ml-10 text-lg font-medium  hover:border-b'>about</li>
                 </Link>
-                <Link href='/#skills'>
+                <Link href='/#Skills'>
                     <li className='ml-10 text-lg font-medium  hover:border-b'>skills</li>
                 </Link>
                 <Link href='/#project'>

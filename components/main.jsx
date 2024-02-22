@@ -1,7 +1,9 @@
+"use client"
 import React from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BsFillPersonFill } from 'react-icons/bs'
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { Icon } from '@iconify/react'
 
 const Main = () => {
     return (
@@ -10,10 +12,9 @@ const Main = () => {
                 <div >
                     <div className='flex justify-center items-center'>
                         <div className='flex justify-end items-center space-x-4 ml-auto'>
-                            <AiOutlineMail className='text-2xl cursor-pointer' />
-                            <BsFillPersonFill className='text-2xl cursor-pointer' />
-                            <FaGithubSquare className='text-2xl cursor-pointer' />
-                            <FaLinkedin className='text-2xl cursor-pointer' />
+                        <Icon icon="material-symbols-light:mail" color="#666" className='text-2xl'/>
+                        <Icon icon="mdi:github" color="#666" className='text-2xl' />
+                        <Icon icon="mdi:linkedin" color="#666" className='text-2xl' />
                         </div>
                     </div>
                     <h1 className='pt-8 pb-2 text-9xl font-bold text-[#393632] font-[GeneralSans-Variable] md: text-5xl'>HI THERE, I&apos;M <span className='text-[#8C8C73]'>HARTAJ MANN.</span></h1>

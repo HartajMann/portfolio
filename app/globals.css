@@ -27,9 +27,6 @@ html{
     @apply bg-[#fafaf9]  tracking-wide
   }
 
-  h1,h2,h3,h4,h5,h6{
-    @apply font-bold
-  }
 
   h1 {
     @apply text-5xl sm:text-5xl md:text-6xl font-dmsans
