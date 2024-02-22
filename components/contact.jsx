@@ -9,7 +9,7 @@ import { HiOutlineChevronDoubleUp, HiOutlineChevronLeft, HiAcademicCap } from 'r
 
 
 const Contact = () => {
-  
+
     const [time, setTime] = useState(new Date().toLocaleTimeString());
     useEffect(() => {
         setInterval(() => {
@@ -35,7 +35,7 @@ const Contact = () => {
                             action="/contact"
                             autoComplete="off"
                             // eslint-disable-next-line react/no-unknown-property
-                            className="mt-10 font-[CabinetGrotesk-Variable] mt-20" 
+                            className="mt-10 font-[CabinetGrotesk-Variable] mt-20"
                             method="POST"
                             onSubmit={handleSubmit}
                         >
@@ -94,9 +94,9 @@ const Contact = () => {
                                 type="submit"  disabled={state.submitting}
                                 className="mt-10  bg-black p-5 text-white rounded-full  duration-300 hover:bg-[#8C8C73] hover:text-black text-xl font-medium"
                             >
-                                    <span className="">
-                                        Send Message
-                                    </span>
+                                <span className="">
+                                    Send Message
+                                </span>
                             </button>
                         </form>
                     </div>
