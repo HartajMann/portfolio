@@ -12,9 +12,18 @@ const Main = () => {
                 <div >
                     <div className='flex justify-center items-center'>
                         <div className='flex justify-end items-center space-x-4 ml-auto'>
-                        <Icon icon="material-symbols-light:mail" color="#666" className='text-2xl'/>
-                        <Icon icon="mdi:github" color="#666" className='text-2xl' />
-                        <Icon icon="mdi:linkedin" color="#666" className='text-2xl' />
+                            <a href='mailto:hatajmann459@gmail.com' target="_blank"
+                                rel="noreferrer" className="group relative w-fit cursor-pointer">
+                                <Icon icon="material-symbols-light:mail" color="#666" className='text-2xl' />
+                            </a>
+                            <a href='https://github.com/HartajMann'>
+                                <Icon icon="mdi:github" color="#666" className='text-2xl' />
+                            </a>
+
+                            <a href='https://www.linkedin.com/in/hartajsinghmann/'>
+                                <Icon icon="mdi:linkedin" color="#666" className='text-2xl' />
+                            </a>
+
                         </div>
                     </div>
                     <h1 className='pt-8 pb-2 text-9xl font-bold text-[#393632] font-[GeneralSans-Variable] md: text-5xl'>HI THERE, I&apos;M <span className='text-[#8C8C73]'>HARTAJ MANN.</span></h1>

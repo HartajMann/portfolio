@@ -32,20 +32,20 @@ const Navbar = () => {
         <Image src="/assets/Untitled.svg" width={100} height={90} alt="Navigation Logo"/>
         <div>
             <ul className='hidden md:flex font-[CabinetGrotesk-Variable] items-center'>
-                <Link href='/'>
-                    <li className='ml-10 text-lg font-medium hover:border-b'>home</li>
+                <Link href='/#home'>
+                    <li className='ml-10 text-lg font-medium hover:border-b  border-[#8C8C73] '>home</li>
                 </Link>
                 <Link href='/#About'>
-                    <li className='ml-10 text-lg font-medium  hover:border-b'>about</li>
+                    <li className='ml-10 text-lg font-medium  hover:border-b border-[#8C8C73]'>about</li>
                 </Link>
                 <Link href='/#Skills'>
-                    <li className='ml-10 text-lg font-medium  hover:border-b'>skills</li>
+                    <li className='ml-10 text-lg font-medium  hover:border-b border-[#8C8C73]'>skills</li>
                 </Link>
                 <Link href='/#project'>
-                    <li className='ml-10 text-lg font-medium  hover:border-b'>projects</li>
+                    <li className='ml-10 text-lg font-medium  hover:border-b border-[#8C8C73]'>projects</li>
                 </Link>
                 <Link href='/#contact'>
-                <li className='ml-10 text-lg font-medium bg-black text-white py-2 px-4 rounded-full cursor-pointer hover:bg-gray-700 transition duration-300 ease-in-out'>Let&apos;s Talk.</li>
+                <li className='ml-10 text-lg font-medium bg-black text-white py-2 px-4 rounded-full cursor-pointer hover:bg-[#8C8C73] transition duration-300 ease-in-out'>Let&apos;s Talk.</li>
                 </Link>
             </ul>
             <div onClick={navHandler} className='md:hidden'>
