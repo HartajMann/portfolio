@@ -98,7 +98,16 @@ const Contact = () => {
                                     Send Message
                                 </span>
                             </button>
+                            <Link href="/HartajSinghMannResume.pdf" target={"_blank"}
+                                type="submit" download={true}
+                                className="mt-10 ml-5 bg-black p-5 text-white rounded-full  duration-300 hover:bg-[#8C8C73] hover:text-black text-xl font-medium"
+                            >
+                                <span className="flex">
+                                    Resume <Icon icon="ph:link-bold"  fontSize={25} />
+                                </span>
+                            </Link>
                         </form>
+                        
                     </div>
 
                     <div className='md:w-1/3'>
