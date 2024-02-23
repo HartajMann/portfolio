@@ -30,6 +30,7 @@ const Contact = () => {
                         <h3 className="max-w-lg 2xl:max-w-3xl text-heading-3 2xl:text-6xl font-semibold  font-[GeneralSans-Variable] text-black ">
                             Have an awesome idea? Let&apos;s bring it to life.
                         </h3>
+                       
                         <form
                             name="contact"
                             action="/contact"
@@ -98,16 +99,10 @@ const Contact = () => {
                                     Send Message
                                 </span>
                             </button>
-                            <Link href="/HartajSinghMannResume.pdf" target={"_blank"}
-                                type="submit" download={true}
-                                className="mt-10 ml-5 bg-black p-5 text-white rounded-full  duration-300 hover:bg-[#8C8C73] hover:text-black text-xl font-medium"
-                            >
-                                <span className="flex">
-                                    Resume <Icon icon="ph:link-bold"  fontSize={25} />
-                                </span>
-                            </Link>
+                            
                         </form>
-                        
+                     
+                         
                     </div>
 
                     <div className='md:w-1/3'>
@@ -117,6 +112,15 @@ const Contact = () => {
                             <p className='mt-4 text-2xl text-[#666666] font-medium font-[CabinetGrotesk-Variable]'>
                                 HartajMann459@Gmail.com
                             </p>
+                            <a href="Resume.pdf" download="Resume.pdf" className='mt-80'>
+                            <button  
+                                className="mt-2 text-2xl text-[#666666] font-medium font-[CabinetGrotesk-Variable]"
+                            >
+                                <span className="flex">
+                                    Resume <Icon icon="ph:link-bold"  fontSize={25} />
+                                </span>
+                            </button>
+                            </a>
                         </a>
                         <p className='text-4xl mt-16 font-semibold font-[GeneralSans-Variable]'>My Digital Spaces</p>
                         <div className='mt-4'>
