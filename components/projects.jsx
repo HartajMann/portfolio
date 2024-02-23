@@ -1,26 +1,36 @@
 import React from 'react'
 import Image from 'next/image'
-import propertyImg from '../public/assets/projects/property.jpg'
+import scenecyclopedia from '../public/assets/projects/scene.png'
+import mobile from '../public/assets/projects/mobile.png'
+import wanderpal from '../public/assets/projects/wanderpal.png'
 import Link from 'next/link'
 import ProjectItem from './projectitem'
 
 const projectsData = [
     {
-      title: "Traveler App",
-      backgroundImage:  propertyImg ,
-      technologies: "Java, Kotlin",
-      description: "A multiple-screen mobile application for a traveler...",
-      githubUrl: "https://github.com/JasneetSingh1/TravelerApp",
-      projectUrl: "#",
+      title: "SceneCyclopedia",
+      backgroundImage:  scenecyclopedia ,
+      technologies: "Next.js, Tailwind CSS, Vercel, The Movie Database (TMDb) API",
+      description: "SceneCyclopedia is your go-to movie database app, offering cinema enthusiasts ratings, cast details, and trailers at their fingertips. From upcoming releases to trending and top-rated films, users can explore a vast array of cinematic content with ease.",
+      githubUrl: "https://github.com/HartajMann/scenecyclopedia",
+      projectUrl: "https://scenecyclopedia.vercel.app/",
     },
     // ... Add more projects here\
     {
-        title: "Traveler App",
-        backgroundImage:  propertyImg ,
-        technologies: "Java, Kotlin",
-        description: "A multiple-screen mobile application for a traveler...",
-        githubUrl: "https://github.com/JasneetSingh1/TravelerApp",
+        title: "Weather Sphere",
+        backgroundImage:  mobile ,
+        technologies: "React Native, AsyncStorage, Geocode API, Meteo API",
+        description: "Weather Sphere is a comprehensive weather app built with React Native. It offers real-time weather updates, hourly temperature forecasts, a 7-day weather outlook, wind speed details, rain probability, and sunrise times. Users can search for weather information by city and save their favorite locations for easy access.",
+        githubUrl: "https://github.com/HartajMann/Weathersphere",
         projectUrl: "#",
+      },
+      {
+        title: "WanderPal",
+        backgroundImage:  wanderpal ,
+        technologies: "React JS, Axios, REST API, and Google Maps API",
+        description: "This real-time web app, powered by React JS and REST API, integrates Google Maps to aid users in discovering nearby restaurants, hotels, and attractions. With a sleek interface, users can easily input or auto-detect their location, accessing detailed information and ratings for each destination. A convenient tool for seamless exploration and discovery.",
+        githubUrl: "https://github.com/HartajMann/wander_pal",
+        projectUrl: "https://wanderpal.netlify.app/",
       },
   ];
 const projects = () => {
