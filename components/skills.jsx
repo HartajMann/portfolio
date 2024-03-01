@@ -16,7 +16,7 @@ const skillData = [
 
 const Skills = () => {
   return (
-    <div  className='w-full md:h-screen p-2 flex items-center py-16 bg-black '>
+    <div  className='w-full md:h-screen p-2 flex items-center py-16 pt-10 bg-black '>
       <div id='Skills' className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <div className='text-center mb-8'>
           <div className='flex items-center justify-center pb-7'>
