@@ -13,7 +13,7 @@ export default function Home() {
     <Navbar/>
     <Main/>
     <About/>
-    <Skills className='pt-5'
+    <Skills className='pt-10'
     />
     <Projects/>
     <Contact/>
